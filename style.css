@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f8ff;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 20px;
+  height: 48px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0px 1px 2px rgba(15, 86, 179, 0.2),
+    0px 2px 4px rgba(15, 86, 179, 0.2);
+  border-radius: 8px;
+}
+
+.btn.primary {
+  color: #ffffff;
+  background-color: #0f56b3;
+  border: 2px solid #0f56b3;
+}
+
+.btn.default {
+  color: #0f56b3;
+  background: #ffffff;
+  border: 2px solid #c0c0c0;
+}
+
+.shown {
+  display: block;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.title-big {
+  font-size: 60px;
+  font-size: 60px;
+  line-height: 133%;
+  /* or 80px */
+
+  letter-spacing: -0.01em;
+  font-feature-settings: "tnum" on, "lnum" on;
+
+  color: #000000;
+}
+
+.title-medium {
+  font-size: 34px;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #414141;
+}
+
+/* Specific CSS */
+
+header {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 133%;
+  /* identical to box height, or 64px */
+
+  letter-spacing: -0.005em;
+
+  /* Black */
+
+  color: #000000;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  border: none;
+  height: 65vh;
+  align-self: center;
+  justify-self: start;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-page {
+  align-self: center;
+  justify-self: center;
+}
+
+.question {
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 130%;
+  /* or 44px */
+  color: #000000;
+}
+
+.action-pane {
+  display: flex;
+  justify-content: space-between;
+}
+
+.styled-radio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px;
+  width: 330px;
+
+  background: rgba(251, 229, 201, 0.5);
+  /* Segment Inner */
+
+  box-shadow: inset 0px 1px 2px rgba(97, 97, 97, 0.2),
+    inset 0px 2px 4px rgba(97, 97, 97, 0.2);
+  border-radius: 14px;
+}
+
+.styled-radio .tab {
+  height: 40px;
+}
+
+.styled-radio input[type="radio"] {
+  display: none;
+}
+
+.styled-radio label {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 12px;
+
+  width: 95px;
+  font-size: 16px;
+  line-height: 150%;
+  color: #bf710f;
+  border-radius: 12px;
+}
+
+.styled-radio input[type="radio"]:checked ~ label {
+  background: #ffffff;
+  box-shadow: 0px 1px 2px rgba(191, 113, 15, 0.2),
+    0px 2px 4px rgba(191, 113, 15, 0.2);
+  z-index: 2;
+}
+
+.custom-radio {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-radio .radio-block {
+  margin-bottom: 15px;
+}
+
+.custom-radio input[type="checkbox"] {
+  margin-right: 15px;
+}
+
+#survey-comments {
+  width: 540px;
+  height: 130px;
+  background: #ffffff;
+  border: 0.2px solid #9e9e9e;
+  box-shadow: inset 3px 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.thankyou-page {
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.thankyou-page .survey-check {
+  width: 130px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border: 2px solid #c0c0c0;
+  box-sizing: border-box;
+  border-radius: 50px;
+  font-size: 48px;
+  color: #1f8b24;
+}
+
+.thankyou-page h2 {
+  text-align: center;
+}
+
+.thankyou-page p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 138%;
+  /* identical to box height, or 28px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.0075em;
+
+  /* Grey / 04 */
+
+  color: #818181;
+}

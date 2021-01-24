@@ -1,0 +1,11 @@
+{
+  "name": "survey-app",
+  "version": "1.0.0",
+  "description": "Freshworks frontend assignment",
+  "main": "server.js",
+  "author": "Phanindra Maddi",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

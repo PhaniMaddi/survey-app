@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey App</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <header>
+    FreshFruits
+  </header>
+
+  <div id="container">
+    <div class="intro-page step step-1">
+      <h2 class="title-big">Hi! 👋</h2>
+      <p class="text-bold">Help us get some insights into the quality of our products</p>
+      <button class="btn primary" id="btn-start-survey">Proceed &rarr;</button>
+    </div>
+
+    <form class="form-fields" id="survey-form" method="POST" enctype="multipart/form-data" onsubmit="return submitForm(event)">
+      <fieldset class="survey-page-1 step step-2 hidden">
+        <h4 class="question">How do you rate the delivery experience?</h4>
+        <div class="tabs styled-radio">
+          <div class="tab">
+            <input type="radio" id="d-great" name="delivery-rating" value="great" checked>
+            <label for="d-great">Great</label><br>
+          </div>
+          <div class="tab">
+            <input type="radio" id="d-not-great" name="delivery-rating" value="not-great">
+            <label for="d-not-great">Not Great</label><br>
+          </div>
+          <div class="tab">
+            <input type="radio" id="d-awful" name="delivery-rating" value="awful">
+            <label for="d-awful">Awful</label><br>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="survey-page-2 step step-3 hidden">
+        <h4 class="question">How do you rate the Freshness of the fruits?</h4>
+        <div class="tabs styled-radio">
+          <div class="tab">
+            <input type="radio" id="f-great" name="freshness-rating" value="great" checked>
+            <label for="f-great">Great</label><br>
+          </div>
+          <div class="tab">
+            <input type="radio" id="f-not-great" name="freshness-rating" value="not-great">
+            <label for="f-not-great">Not Great</label><br>
+          </div>
+          <div class="tab">
+            <input type="radio" id="f-awful" name="freshness-rating" value="awful">
+            <label for="f-awful">Awful</label><br>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="survey-page-3 step step-4 hidden">
+        <h4 class="question">Would you order again?</h4>
+
+        <div class="answer-block custom-radio">
+          <div class="radio-block">
+            <input type="radio" id="s-yes" name="satisfaction-rating" value="great" checked>
+            <label for="s-yes">Yes, Definitely!</label><br>
+          </div>
+          <div class="radio-block">
+            <input type="radio" id="s-no" name="satisfaction-rating" value="not-great">
+            <label for="s-no">No, Never again.</label><br>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="survey-page-4 step step-5 hidden">
+        <h4 class="question">Any comments?</h4>
+        <textarea name="survey-comments" id="survey-comments" cols="30" rows="10"></textarea>
+      </fieldset>
+
+      <div class="action-pane">
+        <button class="btn default hidden" id="btn-back">
+          &larr; Back
+        </button>
+        <button class="btn primary hidden" id="btn-next">
+          Next &rarr;
+        </button>
+        <button class="btn primary hidden" id="btn-submit" type="submit">
+          Submit
+        </button>
+      </div>
+    </form>
+
+    <div class="thankyou-page step step-6 hidden">
+      <div class="survey-check">
+        &check;
+      </div>
+      <h2 class="title-medium">Thank you!</h2>
+      <p>Thanks for helping us improve!</p>
+    </div>
+  </div>
+
+  <!-- WIP -->
+  <!-- <script src="./init.js"></script> -->
+  <script src="./index.js"></script>
+</body>
+</html>
