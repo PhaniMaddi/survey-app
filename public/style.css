@@ -128,7 +128,7 @@ fieldset {
   flex-direction: row;
   align-items: center;
   padding: 4px;
-  width: 330px;
+  width: 375px;
 
   background: rgba(251, 229, 201, 0.5);
   /* Segment Inner */
@@ -153,7 +153,7 @@ fieldset {
   align-items: center;
   padding: 10px 12px;
 
-  width: 95px;
+  width: 120px;
   font-size: 16px;
   line-height: 150%;
   color: #bf710f;
@@ -188,7 +188,7 @@ fieldset {
   box-shadow: inset 3px 2px 4px rgba(0, 0, 0, 0.08);
 }
 
-.thankyou-page {
+#thankyou-page {
   height: 65vh;
   display: flex;
   justify-content: center;
@@ -196,7 +196,7 @@ fieldset {
   flex-direction: column;
 }
 
-.thankyou-page .survey-check {
+#thankyou-page .survey-check {
   width: 130px;
   height: 120px;
   display: flex;
@@ -210,11 +210,11 @@ fieldset {
   color: #1f8b24;
 }
 
-.thankyou-page h2 {
+#thankyou-page h2 {
   text-align: center;
 }
 
-.thankyou-page p {
+#thankyou-page p {
   font-weight: 600;
   font-size: 20px;
   line-height: 138%;

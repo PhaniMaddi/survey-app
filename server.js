@@ -15,7 +15,9 @@ app.get("/", (req, res) => {
 });
 
 app.post("/survey", (req, res) => {
-  res.send(200);
+  setTimeout(() => {
+    res.sendStatus(200);
+  }, 2000);
 });
 
 app.listen(port, (err) => {
